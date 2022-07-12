@@ -1,3 +1,5 @@
+import "./abstractFSM.sol";
+
 //<editable>
 //</editable>
 contract S3__Seller is actorFSM {

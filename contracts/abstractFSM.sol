@@ -40,24 +40,24 @@ contract actorFSM {
 
 //</editable>
     constructor() public {
-ownerAccounts['S1__Buyer'] = address(<S1__Buyer_account_on_sidechain>);
+ownerAccounts['S1__Buyer'] = address(0x60684acf45B99ED7eFf2AC0FA2Db829feA0883C2);
 owners.push("S1__Buyer");
 ownerToActor['S1__Buyer'] = "Buyer";
-actorAccounts['Buyer'] = address(<S1__Buyer_account_on_mainchain>);
+actorAccounts['Buyer'] = address(0xEE69ed07b62Ef7Fce9aE72048d3bb6dD64Ab35E7);
 actors.push("Buyer");
-ownerAccounts['S3__Buyer'] = address(<account_on_sidechain>);
+ownerAccounts['S3__Buyer'] = address(0xB040933b0955da47b9729aee15d4a046F516a917);
 owners.push("S3__Buyer");
 ownerToActor['S3__Buyer'] = "Buyer";
-ownerAccounts['S3__Seller'] = address(<account_on_mainchain>);
+ownerAccounts['S3__Seller'] = address(0x61Bf5528CAcd434D26d4173CcE3B22617fE67ACF);
 owners.push("S3__Seller");
 ownerToActor['S3__Seller'] = "Seller";
-actorAccounts['Seller'] = address(<account_on_sidechain>);
+actorAccounts['Seller'] = address(0x0388CeE553325BCbc64512E2c460C5f539522d1E);
 actors.push("Seller");
-ownerAccounts['partial_on_chain'] = address(<account_on_mainchain>);
+ownerAccounts['partial_on_chain'] = address(0xE64AfDAd2A3966ecBB9B9bffBaB9cdd2154F6d69);
 owners.push("partial_on_chain");
 actors.push("partial_on_chain");
 ownerToActor['partial_on_chain'] = "partial_on_chain";
-ownerAccounts['total_on_chain'] = address(<account_on_mainchain>);
+ownerAccounts['total_on_chain'] = address(0x1786B293A1Ee374C3fF2CA24d563f5270aE500e7);
 owners.push("total_on_chain");
 actors.push("total_on_chain");
 ownerToActor['total_on_chain'] = "total_on_chain";

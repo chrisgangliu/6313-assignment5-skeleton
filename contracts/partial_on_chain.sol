@@ -1,9 +1,9 @@
-contract partial_on_chain is actorFSM, TABSERC20 {
+import "./abstractFSM.sol";
+
+contract partial_on_chain is actorFSM {
 
     constructor() public {
-balanceOf[address(0xEE69ed07b62Ef7Fce9aE72048d3bb6dD64Ab35E7)]=10000;
 
-balanceOf[address(0x0388CeE553325BCbc64512E2c460C5f539522d1E)]=10000;
 
 owner = ownerAccounts['partial_on_chain'];
 addToTransitions("INIT", "Gateway_0c2ssha","","");
